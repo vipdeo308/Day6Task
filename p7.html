@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        resume = {
+                    "basics": {
+                                "name": "Vipul Deorani",
+                                "email": "vipul.deorani@ymail.com",
+                                "summary": "Full Stack Developer, currently training at GUVI.",
+                                "profiles": [
+                                                {
+                                                    "network": "Github",
+                                                    "username": "vipdeo308",
+                                                    "url": "https://github.com/vipdeo308"
+                                                },
+                                                {
+                                                    "network": "LinkedIn",
+                                                    "username": "Vipul Deorani",
+                                                    "url": "https://www.linkedin.com/in/vipul-deorani-95759370/"
+                                                },
+                                                {
+                                                    "network": "Dev",
+                                                    "username": "DEV Community",
+                                                    "url": "https://dev.to/vipuldeorani"
+                                                }
+                                            ]
+                            },
+                    "education": [
+                                    {
+                                        "studyType": "Master of Computer Application",
+                                        "institution": "Shri Guru Ram Rai University, Dehradun",
+                                        "startDate": "2020-07",
+                                        "endDate": "2023-05"
+                                    }
+                                ],
+                    "work": [
+                                {
+                                    "company": "Chegg Q&A",
+                                    "position": "Subject Matter Expert",
+                                    "startDate": "2020-01"
+                                }
+                            ],
+                    "projects": [
+                                    {
+                                        "name": "Online Examination",
+                                        "description": "E-learning website spanning across 30+ countries."
+                                    },
+                                    {
+                                        "name": "Card Game",
+                                        "description": " A network based simple card game written in python"
+                                    }    
+                                ],
+                    "skills": [
+                                {
+                                    "name": "Backend",
+                                    "keywords": [
+                                                    "Java",
+                                                    "AEM",
+                                                    "Sling",
+                                                    "OSGI",
+                                                    "JUnit",
+                                                    "Maven",
+                                                    "SOLID",
+                                                    "Design patterns"
+                                                ]
+                                },
+                                {
+                                    "name": "Cloud - Azure",
+                                    "keywords": [
+                                                    "Serverless",
+                                                    "Containers",
+                                                    "Storage",
+                                                    "Database",
+                                                    "NLP",
+                                                    "Bots",
+                                                    "Key Vault"
+                                                ]
+                                },
+                                {
+                                    "name": "Tools",
+                                    "keywords": [
+                                                    "Git",
+                                                    "Sonarqube",
+                                                    "Atlassian tools",
+                                                    "Docker",
+                                                    "Linux",
+                                                    "IntelliJ",
+                                                    "Eclipse"
+                                                ]
+                                },
+                                {
+                                    "name": "Frontend",
+                                    "keywords": [
+                                                    "JavaScript",
+                                                    "jQuery",
+                                                    "HTML",
+                                                    "CSS"
+                                                ]
+                                },
+                                {
+                                    "name": "Agile",
+                                    "keywords": [
+                                                    "Scrum",
+                                                    "Kanban"
+                                                ]
+                                },
+                                {
+                                    "name": "Databases",
+                                    "keywords": [
+                                                    "CosmosDB",
+                                                    "SQL",
+                                                    "Redis",
+                                                    "Graph"
+                                                ]
+                                }
+                            ]
+                    }
+        
+        var list = Object.keys(resume)            
+        
+        console.log("Iteration - for loop")
+        for(let i=0;i<list.length;i++)
+            console.log("Key:",list[i],"\nValue: ",resume[list[i]])
+
+        console.log("Iteration - for in loop")    
+        for(key in resume)
+            console.log("Key:",key,"\nValue: ",resume[key])    
+        
+        console.log("Iteration - for of loop")
+        for(val of list)
+            console.log("Key:",val,"\nValue: ",resume[val])
+        
+        console.log("Iteration - foreach loop")    
+        list.forEach(display);
+        function display(key)
+        {
+            console.log("Key:",key,"\nValue:",resume[key])
+        }
+    </script>
+</body>
+</html>
